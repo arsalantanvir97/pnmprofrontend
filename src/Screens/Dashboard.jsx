@@ -20,7 +20,7 @@ const Dashboard = () => {
                               <div className="d-sm-flex text-center mt-1 align-items-center justify-content-between">
                                 <div>
                                   <img
-                                    src="../images/even.png"
+                                    src="images/even.png"
                                     alt=""
                                     className="img-fluid mt-1"
                                   />
@@ -37,7 +37,7 @@ const Dashboard = () => {
                               <div className="d-sm-flex text-center mt-1 align-items-center justify-content-between">
                                 <div>
                                   <img
-                                    src="../images/booking.png"
+                                    src="images/booking.png"
                                     alt=""
                                     className="img-fluid mt-1"
                                   />
@@ -54,7 +54,7 @@ const Dashboard = () => {
                               <div className="d-sm-flex text-center mt-1 align-items-center justify-content-between">
                                 <div>
                                   <img
-                                    src="../images/drive.png"
+                                    src="images/drive.png"
                                     alt=""
                                     className="img-fluid mt-1"
                                   />
@@ -71,7 +71,7 @@ const Dashboard = () => {
                               <div className="d-sm-flex text-center mt-1 align-items-center justify-content-between">
                                 <div>
                                   <img
-                                    src="../images/usrs.png"
+                                    src="images/usrs.png"
                                     alt=""
                                     className="img-fluid mt-1"
                                   />
@@ -105,19 +105,19 @@ const Dashboard = () => {
                           </div>
                           <h5 className="text-24">Revenue Analytics</h5>
                           <img
-                            src="../images/graph.png"
+                            src="images/graph.png"
                             alt=""
                             className="img-fluid w-100"
                           />
                           <h5 className="text-24">Drivers Registered</h5>
                           <img
-                            src="../images/graph.png"
+                            src="images/graph.png"
                             alt=""
                             className="img-fluid w-100"
                           />
                           <h5 className="text-24">New Users Registered </h5>
                           <img
-                            src="../images/graph.png"
+                            src="images/graph.png"
                             alt=""
                             className="img-fluid w-100"
                           />

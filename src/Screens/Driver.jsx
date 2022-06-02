@@ -118,7 +118,7 @@ const Driver = () => {
                         }}
                         className="badge-a mr-2"
                       >
-                        <img src="../images/driver-pic.png" alt="" />
+                        <img src="images/driver-pic.png" alt="" />
                         <span className="badge badge-light">.</span>{" "}
                         <span className="text-18 theme-colour">
                           {" "}

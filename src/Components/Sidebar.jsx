@@ -26,7 +26,7 @@ const Sidebar = (props) => {
             >
               <Link to="/dashboard">
                 <img
-                  src="../images/dashboard.png"
+                  src="images/dashboard.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -42,7 +42,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Driver">
                 <img
-                  src="../images/delivery-man.png"
+                  src="images/delivery-man.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -54,7 +54,7 @@ const Sidebar = (props) => {
             {/* <li className="nav-item">
               <a href="#_">
                 <img
-                  src="../images/wallet.png"
+                  src="images/wallet.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -70,7 +70,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Users">
                 <img
-                  src="../images/user-icn.png"
+                  src="images/user-icn.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -88,7 +88,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Bookings">
                 <img
-                  src="../images/car-icn.png"
+                  src="images/car-icn.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -106,7 +106,7 @@ const Sidebar = (props) => {
             >
               <Link to="/PaymentLogs">
                 <img
-                  src="../images/credit-card.png"
+                  src="images/credit-card.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -124,7 +124,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Feedback">
                 <img
-                  src="../images/feedback.png"
+                  src="images/feedback.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -140,7 +140,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Promos">
                 <img
-                  src="../images/discount.png"
+                  src="images/discount.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -158,7 +158,7 @@ const Sidebar = (props) => {
             >
               <Link to="/VehicleTypes">
                 <img
-                  src="../images/category.png"
+                  src="images/category.png"
                   alt=""
                   className="img-fluid mr-1"
                 />
@@ -176,7 +176,7 @@ const Sidebar = (props) => {
             >
               <Link to="/Reports">
                 <img
-                  src="../images/report-icn.png"
+                  src="images/report-icn.png"
                   alt=""
                   className="img-fluid mr-1"
                 />

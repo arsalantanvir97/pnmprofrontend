@@ -82,7 +82,7 @@ const UserDetails = ({ match, history }) => {
                                       user?.userImage &&
                                       user?.userImage !== null
                                         ? `${imageURL}${user?.userImage}`
-                                        : "../images/driver-detl-pic.png"
+                                        : "images/driver-detl-pic.png"
                                     }
                                     className="mr-3"
                                     alt="..."
@@ -166,7 +166,7 @@ const UserDetails = ({ match, history }) => {
                 </button>
               </div>
               <div className="modal-body text-center p-0">
-                <img src="../images/driver-detl-pic.png" alt="" />
+                <img src="images/driver-detl-pic.png" alt="" />
                 <h6 className="text-20">Mark Carson</h6>
                 <h3 className="text-gobold-30">£ 12,234</h3>
                 <div className="row">

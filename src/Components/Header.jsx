@@ -36,7 +36,7 @@ const Header = () => {
                   <img
                     className="brand-logo img-fluid"
                     alt="stack admin logo"
-                    src="../images/logo.png"
+                    src="images/logo.png"
                   />{" "}
                 </Link>{" "}
               </li>
@@ -67,7 +67,7 @@ const Header = () => {
                     data-toggle="dropdown"
                   >
                     <img
-                      src="../images/bell-icon.png"
+                      src="images/bell-icon.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -150,7 +150,7 @@ const Header = () => {
             <div className="modal-body text-center p-0">
               <div className="row">
                 <div className="col-12">
-                  <img src="../images/alert.png" alt="" />
+                  <img src="images/alert.png" alt="" />
                   <h3 className="text-gobold-30 py-2">System Message</h3>
                   <h6 className="text-20 pb-2">
                     Are you sure you want to logout?

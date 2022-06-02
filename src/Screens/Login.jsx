@@ -65,7 +65,7 @@ const Login = ({ history }) => {
               <div className="col-md-6 col-xl-4 col-12 px-lg-0 login-right-col">
                 <div className="login-right-content">
                   <img
-                    src="../images/login-logo.png"
+                    src="images/login-logo.png"
                     alt=""
                     className="img-fluid"
                   />

@@ -114,7 +114,7 @@ const DriverDetails = ({ history, match }) => {
                                     driver?.userImage &&
                                     driver?.userImage !== null
                                       ? `${imageURL}${driver?.userImage}`
-                                      : "../images/driver-detl-pic.png"
+                                      : "images/driver-detl-pic.png"
                                   }
                                   className="mr-3"
                                   alt="..."

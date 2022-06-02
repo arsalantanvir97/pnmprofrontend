@@ -4,8 +4,8 @@ export let baseURL;
 export let imageURL;
 
 if (window.location.hostname == "localhost") {
-  baseURL = "http://localhost:6065/api";
-  imageURL = "http://localhost:6065/";
+  baseURL = "https://localhost:6065/api";
+  imageURL = "https://localhost:6065/";
 } else {
   baseURL = "https://dev74.onlinetestingserver.com:6065/api";
   imageURL = "https://dev74.onlinetestingserver.com:6065/";

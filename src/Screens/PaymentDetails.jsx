@@ -33,7 +33,7 @@ const PaymentDetails = () => {
                         </div>
                         <div className="row my-3">
                           <div className="col-lg-12">
-                            <img src="../images/map-web.png" alt="" />
+                            <img src="images/map-web.png" alt="" />
                           </div>
                         </div>
                         <div className="row">
@@ -41,7 +41,7 @@ const PaymentDetails = () => {
                             <h6 className="text-20">Payment Details</h6>
                             <div className="media booking-media">
                               <img
-                                src="../images/driver-detl-pic.png"
+                                src="images/driver-detl-pic.png"
                                 className="mr-3"
                                 alt="..."
                               />
