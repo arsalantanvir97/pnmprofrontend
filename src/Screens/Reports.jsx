@@ -83,11 +83,13 @@ const Reports = () => {
                               </tr>
                             </thead>
                             <tbody>
+                             
+                            
                               <tr>
                                 <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>test@test.com</td>
-                                <td>mm/dd/yyyy</td>
+                                <td>Mike Phelan</td>
+                                <td>mike@gmail.com</td>
+                                <td>2 days ago</td>
                                 <td>
                                   <div className="btn-group custom-dropdown ml-2 mb-1">
                                     <button
@@ -111,7 +113,7 @@ const Reports = () => {
                                         <i className="fas fa-eye theme-colour" />
                                         View
                                       </a>
-                                      <a
+                                      {/* <a
                                         href="#_"
                                         className="dropdown-item d-flex align-items-center justify-content-start"
                                         data-dismiss="modal"
@@ -120,91 +122,7 @@ const Reports = () => {
                                       >
                                         <i className="far fa-trash-alt red" />
                                         Delete
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>test@test.com</td>
-                                <td>mm/dd/yyyy</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#report-view"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#delte"
-                                      >
-                                        <i className="far fa-trash-alt red" />
-                                        Delete
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>test@test.com</td>
-                                <td>mm/dd/yyyy</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#report-view"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#delte"
-                                      >
-                                        <i className="far fa-trash-alt red" />
-                                        Delete
-                                      </a>
+                                      </a> */}
                                     </div>
                                   </div>
                                 </td>
@@ -214,9 +132,9 @@ const Reports = () => {
                         </div>
                         <div className="row">
                           <div className="col-sm-12 col-md-5">
-                            <div className="dataTables_info pl-1">
+                            {/* <div className="dataTables_info pl-1">
                               Showing 1 to 3 of 3 entries
-                            </div>
+                            </div> */}
                           </div>
                           <div className="col-sm-12 col-md-7">
                             <div className="dataTables_paginate paging_simple_numbers pr-1">
@@ -272,6 +190,109 @@ const Reports = () => {
           </div>
         </div>
       </div>
+      <div className="modal fade blocked-modal" id="report-view" tabIndex={-1} role="dialog" aria-labelledby="exampleModalCenterTitle" style={{display: 'none'}} aria-hidden="true">
+  <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div className="modal-body p-0">
+        <div className="row px-4">
+          <div className="col-lg-12">
+            <h5 className="text-20 bold my-2">Report Details</h5>
+          </div>
+          <div className="col-lg-12">
+            <img src="../images/report-pic.png" alt="" />
+          </div>
+          <div className="col-lg-6">
+            <h6 className="text-18">User Details</h6>
+            <div className="row">
+              <div className="col-lg-6">
+                <p className="text-16">User Name</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">Mike</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-16">Email</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">mike@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <h6 className="text-18">Driver Details</h6>
+            <div className="row">
+              <div className="col-lg-6">
+                <p className="text-16">Driver Name</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">Adam</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-16">Email</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">adam@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="px-3">
+          <hr className="web-hr" />
+        </div>
+        <div className="row px-4 align-items-center">
+          <div className="col-lg-6">
+            <h6 className="text-20">Trip ID 001</h6>
+            <p className="text-16 my-2"><i className="far fa-circle theme-colour" />
+              Pick Up Location:<br />B-15, block 11, Street Claum</p>
+            <p className="text-16 m-0"><i className="fas fa-map-marker-alt theme-colour" />
+              Drop Off Location: <br />A-12, block 5, Street Malibu</p>
+          </div>
+          <div className="col-lg-6 border-left">
+            <div className="row">
+              <div className="col-lg-6">
+                <p className="text-16">Discounted Fare</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">$ 20</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-16">Topup Amount</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16">$ 20</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-16">Total Fare</p>
+              </div>
+              <div className="col-lg-6">
+                <p className="text-black-16"> $ 40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="px-3">
+          <hr className="web-hr" />
+        </div>
+        <div className="row px-3">
+          <div className="col-lg-12">
+            <h6 className="text-16">Issue</h6>
+            <p>For natively created Axure widgets, you do not have to look any further. For natively created
+              Axure widgets, you do not have to look any further. For natively created Axure widgets, you
+              do not have to look any further. For natively created Axure widgets, you do not have to look
+              any</p>
+          </div>
+        </div>
+        <a href="#_" className="site-modal-btn d-block w-100 text-center">Go Back</a>
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

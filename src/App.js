@@ -21,6 +21,8 @@ import AddVehicleTypes from "./Screens/AddVehicleTypes";
 import EditVehicleType from "./Screens/EditVehicleType";
 import UserDetails from "./Screens/UserDetails";
 import DriverDetails from "./Screens/DriverDetails";
+import PaymentDetails from "./Screens/PaymentDetails";
+import BookingDetail from "./Screens/BookingDetail";
 
 const App = () => {
   return (
@@ -47,10 +49,15 @@ const App = () => {
       <PrivateRoute exact path="/ChangePassword" component={ChangePassword} />
       <PrivateRoute exact path="/NewDriver" component={NewDriver} />
       <PrivateRoute exact path="/AddVehicleTypes" component={AddVehicleTypes} />
-      <PrivateRoute exact path="/EditVehicleType/:id" component={EditVehicleType} />
+      <PrivateRoute exact path="/PaymentDetails" component={PaymentDetails} />
+      <PrivateRoute exact path="/BookingDetail" component={BookingDetail} />
+      <PrivateRoute
+        exact
+        path="/EditVehicleType/:id"
+        component={EditVehicleType}
+      />
       <PrivateRoute exact path="/UserDetails/:id" component={UserDetails} />
       <PrivateRoute exact path="/DriverDetails/:id" component={DriverDetails} />
-
     </Router>
   );
 };

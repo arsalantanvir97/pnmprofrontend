@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PaymentLogs = () => {
   return (
@@ -88,11 +89,11 @@ const PaymentLogs = () => {
                             <tbody>
                               <tr>
                                 <td>01</td>
-                                <td>Mark Carson</td>
+                                <td>Liam Payne</td>
                                 <td>Card</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
+                                <td>$ 525</td>
+                                <td>$ 10</td>
+                                <td>$ 15</td>
                                 <td>
                                   <div className="btn-group custom-dropdown ml-2 mb-1">
                                     <button
@@ -134,143 +135,25 @@ const PaymentLogs = () => {
                                       <i className="fa fa-ellipsis-v" />
                                     </button>
                                     <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="payment-details-paid.php"
+                                      <Link to='/PaymentDetails'
                                         className="dropdown-item d-flex align-items-center justify-content-start"
                                       >
                                         <i className="fas fa-eye theme-colour" />
                                         View
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </td>
                               </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Card</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm theme-colour"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      Paid
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown tble-switch">
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start iner-switch"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#for-in-active"
-                                      >
-                                        <label className="switch">
-                                          <input type="checkbox" />
-                                          <span className="slider round" />
-                                        </label>
-                                        Unpaid
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="payment-details-paid.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Card</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
-                                <td>$ 123</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm theme-colour"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      Unpaid
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown tble-switch">
-                                      <a
-                                        href="#_"
-                                        className="dropdown-item d-flex align-items-center justify-content-start iner-switch"
-                                        data-dismiss="modal"
-                                        data-toggle="modal"
-                                        data-target="#for-in-active"
-                                      >
-                                        <label className="switch">
-                                          <input type="checkbox" />
-                                          <span className="slider round" />
-                                        </label>
-                                        paid
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="payment-details-unpaid.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
+                             
                             </tbody>
                           </table>
                         </div>
                         <div className="row">
                           <div className="col-sm-12 col-md-5">
-                            <div className="dataTables_info pl-1">
+                            {/* <div className="dataTables_info pl-1">
                               Showing 1 to 3 of 3 entries
-                            </div>
+                            </div> */}
                           </div>
                           <div className="col-sm-12 col-md-7">
                             <div className="dataTables_paginate paging_simple_numbers pr-1">

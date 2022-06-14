@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Bookings = () => {
   return (
@@ -85,9 +86,9 @@ const Bookings = () => {
                             <tbody>
                               <tr>
                                 <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
+                                <td>Liam Payne</td>
+                                <td>Adam</td>
+                                <td>1 Day Ago</td>
                                 <td className="theme-colour">Completed</td>
                                 <td>
                                   <div className="btn-group custom-dropdown ml-2 mb-1">
@@ -102,181 +103,27 @@ const Bookings = () => {
                                       <i className="fa fa-ellipsis-v" />
                                     </button>
                                     <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-complete.php"
+                                      <Link
+                                        to='/BookingDetail'
                                         className="dropdown-item d-flex align-items-center justify-content-start"
                                       >
                                         <i className="fas fa-eye theme-colour" />
                                         View
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </td>
                               </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
-                                <td className="theme-colour">Booked</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-book.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
-                                <td className="theme-colour">
-                                  Booking in Pending
-                                </td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-pending.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
-                                <td className="theme-colour">
-                                  Cancelled By User
-                                </td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-cancel-by-user.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
-                                <td className="theme-colour">
-                                  Cancelled By Driver
-                                </td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-cancel-by-driver.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>01</td>
-                                <td>Mark Carson</td>
-                                <td>Mark Carson</td>
-                                <td>7 Days Ago</td>
-                                <td className="theme-colour">Disputed</td>
-                                <td>
-                                  <div className="btn-group custom-dropdown ml-2 mb-1">
-                                    <button
-                                      type="button"
-                                      className="btn transparent-btn btn-drop-table btn-sm"
-                                      data-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
-                                      {" "}
-                                      <i className="fa fa-ellipsis-v" />
-                                    </button>
-                                    <div className="dropdown-menu text-left custom-dropdown">
-                                      <a
-                                        href="booking-disputed.php"
-                                        className="dropdown-item d-flex align-items-center justify-content-start"
-                                      >
-                                        <i className="fas fa-eye theme-colour" />
-                                        View
-                                      </a>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
+                          
+                             
                             </tbody>
                           </table>
                         </div>
                         <div className="row">
                           <div className="col-sm-12 col-md-5">
-                            <div className="dataTables_info pl-1">
+                            {/* <div className="dataTables_info pl-1">
                               Showing 1 to 3 of 3 entries
-                            </div>
+                            </div> */}
                           </div>
                           <div className="col-sm-12 col-md-7">
                             <div className="dataTables_paginate paging_simple_numbers pr-1">

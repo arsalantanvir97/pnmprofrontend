@@ -1,9 +1,45 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import Graph from "../Components/Graph";
+import { baseURL } from "../utils/api";
 
 const Dashboard = () => {
+  const adminLogin = useSelector((state) => state.adminLogin);
+  const { adminInfo } = adminLogin;
+  const [loading, setloading] = useState(false);
+
+  const [user, setUser] = useState("");
+  const [year, setyear] = useState("");
+
+  const [dashboarddata, setdashboarddata] = useState("");
+
+  useEffect(() => {
+    handleGetDashboarddata();
+  }, [year]);
+
+  const handleGetDashboarddata = async () => {
+    try {
+      setloading(true);
+      const res = await axios({
+        url: `${baseURL}/auth/getCountofallCollection`,
+        params: { year },
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${adminInfo.token}`
+        }
+      });
+      console.log("handleGetDashboarddatares", res);
+      setdashboarddata(res?.data);
+      setloading(false);
+    } catch (err) {
+      console.log(err);
+      setloading(false);
+    }
+    setloading(false);
+  };
   return (
     <>
-
       <div className="app-content content dashboard">
         <div className="content-wrapper">
           <div className="content-body">
@@ -25,9 +61,21 @@ const Dashboard = () => {
                                     className="img-fluid mt-1"
                                   />
                                 </div>
-                                <h3 className="theme-colour text-50 mt-1">
-                                  $316
-                                </h3>
+                                {loading ? (
+                                  <div
+                                    style={{
+                                      width: "100%",
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}
+                                  >
+                                    <div className="custommloader"></div>
+                                  </div>
+                                ) : (
+                                  <h3 className="theme-colour text-50 mt-1">
+                                    $525
+                                  </h3>
+                                )}
                               </div>
                               <h6 className="text-18">Total Revenue</h6>
                             </div>
@@ -42,9 +90,21 @@ const Dashboard = () => {
                                     className="img-fluid mt-1"
                                   />
                                 </div>
-                                <h3 className="theme-colour text-50 mt-1">
-                                  330
-                                </h3>
+                                {loading ? (
+                                  <div
+                                    style={{
+                                      width: "100%",
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}
+                                  >
+                                    <div className="custommloader"></div>
+                                  </div>
+                                ) : (
+                                  <h3 className="theme-colour text-50 mt-1">
+                                    1
+                                  </h3>
+                                )}
                               </div>
                               <h6 className="text-18">Total Bookings</h6>
                             </div>
@@ -59,9 +119,21 @@ const Dashboard = () => {
                                     className="img-fluid mt-1"
                                   />
                                 </div>
-                                <h3 className="theme-colour text-50 mt-1">
-                                  330
-                                </h3>
+                                {loading ? (
+                                  <div
+                                    style={{
+                                      width: "100%",
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}
+                                  >
+                                    <div className="custommloader"></div>
+                                  </div>
+                                ) : (
+                                  <h3 className="theme-colour text-50 mt-1">
+                                    {dashboarddata?.drivercount}
+                                  </h3>
+                                )}
                               </div>
                               <h6 className="text-18">Total Drivers</h6>
                             </div>
@@ -76,16 +148,28 @@ const Dashboard = () => {
                                     className="img-fluid mt-1"
                                   />
                                 </div>
-                                <h3 className="theme-colour text-50 mt-1">
-                                  330
-                                </h3>
+                                {loading ? (
+                                  <div
+                                    style={{
+                                      width: "100%",
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}
+                                  >
+                                    <div className="custommloader"></div>
+                                  </div>
+                                ) : (
+                                  <h3 className="theme-colour text-50 mt-1">
+                                    {dashboarddata?.user}
+                                  </h3>
+                                )}
                               </div>
                               <h6 className="text-18">Total users</h6>
                             </div>
                           </div>
                         </div>
                         <div className="bottom tickets mt-2">
-                          <div className="offset-md-9 col-lg-3 col-md-3 col-12 text-md-right text-center">
+                          {/* <div className="offset-md-9 col-lg-3 col-md-3 col-12 text-md-right text-center">
                             <div className="form-field">
                               <select
                                 className="site-input box-shadow"
@@ -102,25 +186,46 @@ const Dashboard = () => {
                                 aria-hidden="true"
                               />
                             </div>
-                          </div>
-                          <h5 className="text-24">Revenue Analytics</h5>
-                          <img
-                            src="images/graph.png"
-                            alt=""
-                            className="img-fluid w-100"
-                          />
-                          <h5 className="text-24">Drivers Registered</h5>
-                          <img
-                            src="images/graph.png"
-                            alt=""
-                            className="img-fluid w-100"
-                          />
-                          <h5 className="text-24">New Users Registered </h5>
-                          <img
-                            src="images/graph.png"
-                            alt=""
-                            className="img-fluid w-100"
-                          />
+                          </div> */}
+                          {loading ? (
+                            <div
+                              style={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "center",
+                              }}
+                            >
+                              <div className="custommloader"></div>
+                            </div>
+                          ) : (
+                            <Graph graph_data={dashboarddata?.graph_data1} label={'Revenue Analytics'}/>
+                          )}
+                          {loading ? (
+                            <div
+                              style={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "center"
+                              }}
+                            >
+                              <div className="custommloader"></div>
+                            </div>
+                          ) : (
+                            <Graph graph_data={dashboarddata?.graph_data2} label={'Drivers Registered'}/>
+                          )}
+                          {loading ? (
+                            <div
+                              style={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "center"
+                              }}
+                            >
+                              <div className="custommloader"></div>
+                            </div>
+                          ) : (
+                            <Graph graph_data={dashboarddata?.graph_data1} label={'New Users Registered'}/>
+                          )}
                         </div>
                       </div>
                     </div>

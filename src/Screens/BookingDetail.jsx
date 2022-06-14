@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BookingDetail = () => {
+const BookingDetail = ({ history }) => {
   return (
     <>
       <div className="app-content content dashboard">
@@ -12,12 +13,15 @@ const BookingDetail = () => {
                 <div className="col-12 px-xl-4 pt-xl-2">
                   <div className="row my-sm-2 mx-2 align-items-baseline">
                     <div className="col-12">
-                      <a
-                        href="bookings.php"
+                      <Link
+                        to="#"
+                        onClick={() => {
+                          history?.goBack();
+                        }}
                         className="inner-heading-24 black-colour"
                       >
                         <i className="fas fa-arrow-left" /> Bookings Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="card mb-sm-5 mx-2">
@@ -48,7 +52,7 @@ const BookingDetail = () => {
                               <div className="media-body">
                                 <div className="d-flex align-items-center">
                                   <h5 className="text-20 d-inline-block mr-2">
-                                    User Name
+                                    Liam Payne
                                   </h5>
                                 </div>
                                 <i className="fas fa-star" />
@@ -61,7 +65,7 @@ const BookingDetail = () => {
                                     <p className="text-16">Amount Paid </p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">$ 1234</p>
+                                    <p className="text-black-16">$ 525</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Payment Method</p>
@@ -73,13 +77,13 @@ const BookingDetail = () => {
                                     <p className="text-16">Time</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">13:00</p>
+                                    <p className="text-black-16">17:23</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Date</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">02.05.2020</p>
+                                    <p className="text-black-16">1 day ago</p>
                                   </div>
                                 </div>
                               </div>
@@ -96,7 +100,7 @@ const BookingDetail = () => {
                               <div className="media-body">
                                 <div className="d-flex align-items-center">
                                   <h5 className="text-20 d-inline-block mr-2">
-                                    Joshua Loyd Mamu
+                                    Adam
                                   </h5>
                                 </div>
                                 <i className="fas fa-star" />
@@ -122,14 +126,14 @@ const BookingDetail = () => {
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-black-16">
-                                      email@email.com
+                                      adam@gmail.com
                                     </p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">No. of Trips</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">45</p>
+                                    <p className="text-black-16">1</p>
                                   </div>
                                 </div>
                               </div>
@@ -141,12 +145,12 @@ const BookingDetail = () => {
                               <i className="far fa-circle theme-colour" />
                               Pick Up Location:
                               <br />
-                              A-15, block 2, Street XYZ
+                              B-15, block 2, Street Claum
                             </p>
                             <p className="text-16 m-0">
                               <i className="fas fa-map-marker-alt theme-colour" />
                               Drop Off Location: <br />
-                              A-15, block 2, Street XYZ
+                              A-12, block 2, Street Malibu
                             </p>
                           </div>
                         </div>

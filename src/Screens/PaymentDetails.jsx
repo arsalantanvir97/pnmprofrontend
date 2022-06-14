@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PaymentDetails = () => {
+const PaymentDetails = ({history}) => {
   return (
     <>
       <div className="app-content content dashboard">
@@ -12,12 +13,13 @@ const PaymentDetails = () => {
                 <div className="col-12 px-xl-4 pt-xl-2">
                   <div className="row my-sm-2 mx-2 align-items-baseline">
                     <div className="col-12">
-                      <a
-                        href="payment-logs.php"
+                      <Link to='#' onClick={()=>{
+                        history?.goBack()
+                      }}
                         className="inner-heading-24 black-colour"
                       >
                         <i className="fas fa-arrow-left" /> Payment Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="card mb-sm-5 mx-2">
@@ -48,7 +50,7 @@ const PaymentDetails = () => {
                               <div className="media-body">
                                 <div className="d-flex align-items-center">
                                   <h5 className="text-20 d-inline-block mr-2">
-                                    User Name
+                                    Liam Payne
                                   </h5>
                                 </div>
                                 <i className="fas fa-star" />
@@ -61,26 +63,26 @@ const PaymentDetails = () => {
                                     <p className="text-16">Total Amount </p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">$ 1234</p>
+                                    <p className="text-black-16">$ 525</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">My Commission</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">$ 1234</p>
+                                    <p className="text-black-16">$ 10</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Driver's Share</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">$ 1234</p>
+                                    <p className="text-black-16">$ 15</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Transaction ID</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-black-16">
-                                      ch_1Eg3mXLFMNZXO4dgwef
+                                    627a0fd40e582c4783740185
                                     </p>
                                   </div>
                                   <div className="col-lg-6">
@@ -93,19 +95,19 @@ const PaymentDetails = () => {
                                     <p className="text-16">Paid to</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">Driver Name</p>
+                                    <p className="text-black-16">Adam</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Date</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">05/13/2020</p>
+                                    <p className="text-black-16">1 day ago</p>
                                   </div>
                                   <div className="col-lg-6">
                                     <p className="text-16">Time</p>
                                   </div>
                                   <div className="col-lg-6">
-                                    <p className="text-black-16">13:00</p>
+                                    <p className="text-black-16">17:23</p>
                                   </div>
                                 </div>
                               </div>
