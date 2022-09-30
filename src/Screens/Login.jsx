@@ -11,6 +11,7 @@ import Toasty from "../utils/toast";
 
 import "react-toastify/dist/ReactToastify.css";
 import { validateEmail } from "../utils/validateEmail";
+// import { io } from "socket.io-client";
 
 const Login = ({ history }) => {
   const dispatch = useDispatch();
@@ -25,7 +26,20 @@ const Login = ({ history }) => {
   const [loading, setloading] = useState(false);
 
   const [forgotpasswordModal, setforgotpasswordModal] = useState(0);
+//   let userId = "123";
 
+//   useEffect(() => {
+//     console.log("abbbbbbbc");
+//     // socket.emit("5ff83d4a7d73ad8e9b98b7d5", "coordinates");
+//     const socket = io("https://localhost:6065");
+//     console.log("object", socket);
+//     socket.emit("joinRoom", userId);
+// let usercoodinate=[52.5200,13.4050]
+//     socket.on("drivercoordinates", (coordinates) => {
+//       console.log('coordinatescoordinates',coordinates);
+//       socket.emit('recievedriverlocation',coordinates)
+//     });
+//   },[]);
   const adminLogin = useSelector((state) => state.adminLogin);
   const { adminInfo } = adminLogin;
   const submitHandler = async () => {
@@ -123,8 +137,8 @@ const Login = ({ history }) => {
                         />
                       </div>
                       <div className="text-right">
-                      <Link to="/ForgotPassword" className="forgot-link">
-                          Forgot Password 
+                        <Link to="/ForgotPassword" className="forgot-link">
+                          Forgot Password
                         </Link>
                       </div>
                       <div className="text-center mt-2">
@@ -152,7 +166,7 @@ const Login = ({ history }) => {
                 </div>
               </div>
             </div>
-            <Link to='/' className="back-web">
+            <Link to="/" className="back-web">
               <i className="fas fa-arrow-left" /> Back to Login
             </Link>
           </div>
